@@ -12,15 +12,15 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/error-page")
 public class ErrorPageController {
 
-//    @RequestMapping("/404")
-//    public String errorPage404(HttpServletRequest request, HttpServletResponse response) {
-//        log.info("errorPage 404");
-//        return "error-page/404";
-//    }
-//
-//    @RequestMapping("/500")
-//    public String errorPage500(HttpServletRequest request, HttpServletResponse response) {
-//        log.info("errorPage 500");
-//        return "error-page/500";
-//    }
+    @RequestMapping("/404")
+    public String errorPage404(HttpServletRequest request, HttpServletResponse response) {
+        log.info("errorPage 404");
+        return "error-page/404";
+    }
+
+    @RequestMapping("/500")
+    public String errorPage500(HttpServletRequest request, HttpServletResponse response) {
+        log.info("errorPage 500");
+        return "error-page/500";
+    }
 }
